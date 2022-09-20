@@ -1,0 +1,12 @@
+{
+  "name": "Front: Reader",
+  "dockerComposeFile": "./docker-compose.yml",
+  "service": "main",
+  "settings": {
+      //"http.proxyStrictSSL": false,
+  },
+  "extensions": [
+      
+  ],
+  "workspaceFolder": "/workspace"
+}

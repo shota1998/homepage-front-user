@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import { Button } from './Button';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
 
@@ -30,33 +29,19 @@ function Navbar() {
         <div className='navbar-container'>
           <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
             s2cache
-            {/* <i className='fab fa-typo3' /> */}
           </Link>
           <div className='menu-icon' onClick={handleClick}>
             <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
           </div>
           <ul className={click ? 'nav-menu active' : 'nav-menu'}>
             <li className='nav-item'>
-              <Link to='/' className='nav-links' onClick={closeMobileMenu}>
-                Home
+              <Link to='/site' className='nav-links' onClick={closeMobileMenu}>
+                Site
               </Link>
             </li>
             <li className='nav-item'>
-              <Link
-                to='/profile'
-                className='nav-links'
-                onClick={closeMobileMenu}
-              >
+              <Link to='/profile' className='nav-links' onClick={closeMobileMenu}>
                 Profile
-              </Link>
-            </li>
-            <li className='nav-item'>
-              <Link
-                to='/work'
-                className='nav-links'
-                onClick={closeMobileMenu}
-              >
-                Work
               </Link>
             </li>
           </ul>

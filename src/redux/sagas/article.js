@@ -30,7 +30,7 @@ function* fetchAllArticle(action) {
     console.log(response);
     yield put({ type: type.GET_ARTICLE_SUCCESS, articles: response.articles});
   } catch (e) {
-    yield
+    yield put({ type: type.GET_ARTICLE_FAILED, message: "Failed to fetch articles."});
   }
 }
 

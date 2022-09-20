@@ -23,7 +23,7 @@ function Cards() {
     <div className='cards'>
       <div className='cards__container'>
         <div className='cards__wrapper'>
-          {loading && <p>Loading...</p>}
+          {!error && loading && <p>Loading...</p>}
 
           {articles.length > 0 && articles.map((article) => (
             <CardItem
@@ -33,8 +33,8 @@ function Cards() {
             /> 
           ))}
 
-          {articles.length === 0 && !loading && <p>No Articles available!</p>}
-          {error && !loading && <p>{error}</p>}
+          {!error && articles.length === 0 && !loading && <p>No Articles available!</p>}
+          {error  && <p>{error}</p>}
         </div>
       </div>
     </div>

@@ -20,6 +20,13 @@ export default function Profile() {
         <p>AWS: S3, Congito</p>
         <p>Others: OCI, Vercel</p>
       </div>
+      <hr />
+      <div className='source'>
+        <h3>Source codes</h3>
+        <a href="https://github.com/shota1998/homepage-api"         target="_blank" rel="noreferrer"><p>API</p></a>
+        <a href="https://github.com/shota1998/homepage-front-user"  target="_blank" rel="noreferrer"><p>Front - User</p></a>
+        <a href="https://github.com/shota1998/homepage-front-admin" target="_blank" rel="noreferrer"><p>Front - Admin</p></a>
+      </div>
     </div>
   </>;
 }

@@ -43,6 +43,12 @@ export default function Profile() {
         <p>TOEIC 925</p>
         <p>EIKEN Grade Pre-1</p>
       </div>
+      <hr />
+      <div className='sns'>
+        <h3>Accounts</h3>
+        <a href="https://github.com/shota1998"            target="_blank" rel="noreferrer"><p>GitHub</p></a>
+        <a href="https://www.linkedin.com/in/shota-sato/" target="_blank" rel="noreferrer"><p>LinkedIn</p></a>
+      </div>
     </div>
   </>;
 }
